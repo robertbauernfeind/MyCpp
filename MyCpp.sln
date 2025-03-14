@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyCpp.HelloWorld", "MyCpp.H
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyCpp.Variables", "MyCpp.Variables\MyCpp.Variables.vcxproj", "{E0AC44F5-B9D3-4899-9930-E56A003F4F96}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyCpp.MathExpressions", "MyCpp.MathExpressions\MyCpp.MathExpressions.vcxproj", "{FB5ABD40-F97D-43F3-A710-C17E9780FA32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{E0AC44F5-B9D3-4899-9930-E56A003F4F96}.Release|x64.Build.0 = Release|x64
 		{E0AC44F5-B9D3-4899-9930-E56A003F4F96}.Release|x86.ActiveCfg = Release|Win32
 		{E0AC44F5-B9D3-4899-9930-E56A003F4F96}.Release|x86.Build.0 = Release|Win32
+		{FB5ABD40-F97D-43F3-A710-C17E9780FA32}.Debug|x64.ActiveCfg = Debug|x64
+		{FB5ABD40-F97D-43F3-A710-C17E9780FA32}.Debug|x64.Build.0 = Debug|x64
+		{FB5ABD40-F97D-43F3-A710-C17E9780FA32}.Debug|x86.ActiveCfg = Debug|Win32
+		{FB5ABD40-F97D-43F3-A710-C17E9780FA32}.Debug|x86.Build.0 = Debug|Win32
+		{FB5ABD40-F97D-43F3-A710-C17E9780FA32}.Release|x64.ActiveCfg = Release|x64
+		{FB5ABD40-F97D-43F3-A710-C17E9780FA32}.Release|x64.Build.0 = Release|x64
+		{FB5ABD40-F97D-43F3-A710-C17E9780FA32}.Release|x86.ActiveCfg = Release|Win32
+		{FB5ABD40-F97D-43F3-A710-C17E9780FA32}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
