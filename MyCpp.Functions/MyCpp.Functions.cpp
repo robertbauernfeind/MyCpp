@@ -1,4 +1,5 @@
 #include <iostream>
+#include "greet.hpp"
 
 using namespace std;
 
@@ -10,10 +11,6 @@ int increaseByValueNoRef(int value)
 void increaseByValueRef(int& value)
 {
 	++value;
-}
-
-void greet(string& name) {
-	cout << "Hello " << name << endl;
 }
 
 void greetModify(string& name) {
