@@ -21,6 +21,9 @@ void greetModify(string& name) {
 	name = "Changed";
 }
 
+// Function decleration (function prototype)
+void testFunction();
+
 int main()
 {
 	// without reference
@@ -48,4 +51,17 @@ int main()
 	// modify value3 by reference
 	greetModify(value3);
 	cout << "Value after greetModify: " << value3 << endl;
+
+	// When writing a function after the main function, the function
+	// has to be delcared before the main function
+	// and defined after the main function
+
+	cout << "Function decleration: " << endl;
+	testFunction();
+}
+
+// Function definition
+void testFunction()
+{
+	cout << "This is a test function" << endl;
 }
