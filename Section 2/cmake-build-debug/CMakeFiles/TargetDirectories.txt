@@ -1,0 +1,3 @@
+C:/Users/r.bauernfeind/DevWorkspace/MyCpp/Section 2/cmake-build-debug/CMakeFiles/Section_2.dir
+C:/Users/r.bauernfeind/DevWorkspace/MyCpp/Section 2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/r.bauernfeind/DevWorkspace/MyCpp/Section 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
