@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/r.bauernfeind/DevWorkspace/MyCpp/Section 2/MyCpp2.Pointers/cmake-build-debug",
-		"source" : "C:/Users/r.bauernfeind/DevWorkspace/MyCpp/Section 2/MyCpp2.Pointers"
+		"build" : "C:/Users/Robert Bauernfeind/source/repos/robertbauernfeind/MyCpp/Section 2/MyCpp2.Pointers/cmake-build-debug",
+		"source" : "C:/Users/Robert Bauernfeind/source/repos/robertbauernfeind/MyCpp/Section 2/MyCpp2.Pointers"
 	},
 	"version" : 
 	{

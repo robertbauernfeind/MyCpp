@@ -363,3 +363,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.idea/.gitignore
+/.idea/editor.xml
+/.idea/modules.xml
+/.idea/MyCpp.iml
+/.idea/vcs.xml
