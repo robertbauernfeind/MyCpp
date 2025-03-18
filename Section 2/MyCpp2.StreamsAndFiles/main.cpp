@@ -13,21 +13,30 @@ struct Movie {
 };
 
 void readingFromStreams();
-
 void writingToTextFiles();
-
 void readingFromTextFiles();
+void writingToBinaryFiles();
+void readingFromBinaryFiles();
 
 int main() {
     // readingFromStreams();
 
     cout << endl;
 
-    // writingToTextFiles();
+    writingToTextFiles();
 
     cout << endl;
 
     readingFromTextFiles();
+
+    cout << endl;
+
+    writingToBinaryFiles();
+
+    cout << endl;
+
+    readingFromBinaryFiles();
+
     return 0;
 }
 
@@ -126,6 +135,44 @@ void readingFromTextFiles() {
             cout << movie.title << endl;
         }
 
+        file.close();
+    }
+}
+
+void writingToBinaryFiles() {
+    int numbers[] = {1'000'000, 2'000'000, 3'000'000};
+
+    // Text file
+    // expected file size: 24 bytes
+    // ofstream file("numbers.txt");
+    // // file.open("numbers.txt");
+    //
+    // if (file.is_open()) {
+    //     for (const int number : numbers) {
+    //         file << number << endl;
+    //     }
+    //
+    //     file.close();
+    // }
+
+    // expected file size: 12 bytes
+    // 12 => 3 * 4 bytes, 3* 4 integers
+    ofstream file("numbers.dat", ios::binary);
+    if (file.is_open()) {
+        file.write(reinterpret_cast<char*>(&numbers), sizeof(numbers));
+        file.close();
+    }
+}
+
+void readingFromBinaryFiles() {
+    int numbers[3];
+
+    ifstream file("numbers.dat", ios::binary);
+    if (file.is_open()) {
+        int number;
+        while (file.read(reinterpret_cast<char*>(&number), sizeof(number))) {
+            cout << number << endl;
+        }
         file.close();
     }
 }

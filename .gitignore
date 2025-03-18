@@ -16,7 +16,7 @@ MyCpp.CourseMaterials
 cmake-build-debug/
 
 # Ignore IDE configuration directories
-# .idea/
+.idea/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
