@@ -2,19 +2,32 @@
 #include <limits>
 #include <fstream>
 #include <iomanip>
+#include <string>
 
 using namespace std;
+
+struct Movie {
+    int id;
+    string title;
+    int year;
+};
 
 void readingFromStreams();
 
 void writingToTextFiles();
+
+void readingFromTextFiles();
 
 int main() {
     // readingFromStreams();
 
     cout << endl;
 
-    writingToTextFiles();
+    // writingToTextFiles();
+
+    cout << endl;
+
+    readingFromTextFiles();
     return 0;
 }
 
@@ -68,10 +81,51 @@ void writingToTextFiles() {
 
         // CSV:
         file << "id,title,year\n"
-             << "1,Terminator 1, 1984\n"
-             << "1,Terminator 2, 1991\n";
+                << "1,Terminator 1, 1984\n"
+                << "1,Terminator 2, 1991\n";
 
         // release file
+        file.close();
+
+        cout << "File written successfully!" << endl;
+    }
+}
+
+void readingFromTextFiles() {
+    // Reading from text files
+    cout << endl << " == Reading from text files == " << endl;
+    // ifstream: input file stream
+    ifstream file;
+    file.open("data.csv");
+
+    if (file.is_open()) {
+        string str;
+
+        // same problem as with cin
+        // stream stops at delimiter like ' ', '\n'
+        // file >> str;
+        // use getline() instead
+
+        // eof = end of line
+        getline(file, str);
+
+        while (!file.eof()) {
+            // default delimiter is '\n'
+
+            getline(file, str, ',');
+            if (str.empty()) continue;
+            Movie movie;
+            movie.id = stoi(str);
+
+            getline(file, str, ',');
+            movie.title = str;
+
+            getline(file, str);
+            movie.year = stoi(str);
+
+            cout << movie.title << endl;
+        }
+
         file.close();
     }
 }
