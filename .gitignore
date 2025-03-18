@@ -13,7 +13,7 @@
 MyCpp.CourseMaterials
 
 # Ignore build directories
-# cmake-build-debug/
+cmake-build-debug/
 
 # Ignore IDE configuration directories
 # .idea/
