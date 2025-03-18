@@ -223,7 +223,7 @@ void workingWithFileStreams() {
     }
 }
 
-// Execise: convert a double to a string
+// Exercise: convert a double to a string
 // string dtos(double number) {
 //     ostringstream oss;
 //     oss << fixed << setprecision(1) << number;
