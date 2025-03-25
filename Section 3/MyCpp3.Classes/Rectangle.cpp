@@ -7,6 +7,26 @@
 
 using namespace std;
 
+Rectangle::Rectangle(int width, int height) {
+    //:width{width}, height{height}
+    cout << "Constructing a Rectangle" << endl;
+    setHeight(height);
+    setWidth(width);
+}
+
+// constructor delegation
+Rectangle::Rectangle(int width, int height, const string &color): Rectangle(width, height) {
+    cout << "Constructing a Rectangle with color" << endl;
+    this->color = color;
+}
+
+Rectangle::Rectangle(const Rectangle &source) {
+    cout << "Rectangle copied" << endl;
+    this->width = source.width;
+    this->height = source.height;
+    this->color = source.color;
+}
+
 int Rectangle::getHeight() const {
     return height;
 }

@@ -5,10 +5,11 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
+#include <iostream>
+using namespace std;
 
 // The header file is basically a blueprint for the class.
 // In other words, like in C# this would be an interface.
-
 class Rectangle {
     // Access modifiers:
     // - private
@@ -16,18 +17,30 @@ class Rectangle {
     // - public
 
 private:
-    int width;
-    int height;
+    int width = 0;
+    int height = 0;
+    string color;
 
 public:
+    Rectangle(int width, int height);
+
+    Rectangle(int width, int height, const string &color);
+
+    // Copy constructor
+    Rectangle(const Rectangle &source);
+
+    // prevent copy constructor, only reference can be passed
+    // Rectangle(const Rectangle &source) = delete;
+
+    Rectangle() = default;
+
+
     int getHeight() const;
 
     void setHeight(int height);
 
-    // Getter (accessor
     int getWidth() const;
 
-    // Setter (mutator)
     void setWidth(int width);
 
     void draw();

@@ -4,6 +4,9 @@
 
 using namespace std;
 
+void showRectangle(Rectangle& rectangle) {
+}
+
 int main() {
     // Structures vs Classes
     // Structs:
@@ -20,9 +23,11 @@ int main() {
 
     std::cout << " ==== Classes ====" << std::endl;
 
-    Rectangle rectangle;
-    rectangle.setWidth(10);
-    rectangle.setHeight(20);
+    // Rectangle rectangle(10,20);
+    Rectangle rectangle{10,20};
+
+    // rectangle.setWidth(10);
+    // rectangle.setHeight(20);
 
     cout << rectangle.getArea() << endl;
 
@@ -33,5 +38,14 @@ int main() {
     TextBox box;
     box.setValue("Hello, World!");
     cout << box.getValue() << endl;
+
+    // ===
+
+    // Constructor delegation
+    Rectangle rectangle2{10,20, "red"};
+
+    // Copy  constructor
+    Rectangle rectangle3 = rectangle2;
+    showRectangle(rectangle2);
     return 0;
 }
