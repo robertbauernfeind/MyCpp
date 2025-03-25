@@ -7,4 +7,6 @@ add_executable(MyCpp3_Classes main.cpp
         Rectangle.cpp
         Rectangle.h
         TextBox.cpp
-        TextBox.h)
+        TextBox.h
+        SmartPointer.cpp
+        SmartPointer.h)

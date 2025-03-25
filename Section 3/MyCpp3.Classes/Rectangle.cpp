@@ -7,7 +7,11 @@
 
 using namespace std;
 
+int Rectangle::objectsCount = 0;
+
 Rectangle::Rectangle(int width, int height) {
+    objectsCount++;
+
     //:width{width}, height{height}
     cout << "Constructing a Rectangle" << endl;
     setHeight(height);
@@ -25,6 +29,10 @@ Rectangle::Rectangle(const Rectangle &source) {
     this->width = source.width;
     this->height = source.height;
     this->color = source.color;
+}
+
+Rectangle::~Rectangle() {
+    cout << "Destructing a Rectangle" << endl;
 }
 
 int Rectangle::getHeight() const {
@@ -53,11 +61,15 @@ void Rectangle::setWidth(int width) {
     this->width = width;
 }
 
-void Rectangle::draw() {
+void Rectangle::draw() const {
     cout << "Drawing a rectangle" << endl;
     cout << "Dimensions: " << width << ", " << height << endl;
 }
 
-int Rectangle::getArea() {
+int Rectangle::getArea() const {
     return width * height;
+}
+
+int Rectangle::getObjectsCount() {
+    return objectsCount;
 }

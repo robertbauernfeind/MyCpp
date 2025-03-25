@@ -17,11 +17,13 @@ class Rectangle {
     // - public
 
 private:
+    static int objectsCount;
     int width = 0;
     int height = 0;
     string color;
 
 public:
+    // Constructors
     Rectangle(int width, int height);
 
     Rectangle(int width, int height, const string &color);
@@ -34,6 +36,11 @@ public:
 
     Rectangle() = default;
 
+    // Destructors
+    ~Rectangle();
+
+    // Methods
+    static int getObjectsCount();
 
     int getHeight() const;
 
@@ -43,9 +50,9 @@ public:
 
     void setWidth(int width);
 
-    void draw();
+    void draw() const;
 
-    int getArea();
+    int getArea() const;
 };
 
 
