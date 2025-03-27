@@ -1,3 +1,0 @@
-C:/Users/Robert Bauernfeind/source/repos/robertbauernfeind/MyCpp/Section 2/MyCpp2.Pointers/cmake-build-debug/CMakeFiles/MyCpp2_Pointers.dir
-C:/Users/Robert Bauernfeind/source/repos/robertbauernfeind/MyCpp/Section 2/MyCpp2.Pointers/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Robert Bauernfeind/source/repos/robertbauernfeind/MyCpp/Section 2/MyCpp2.Pointers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
